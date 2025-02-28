@@ -56,7 +56,7 @@ if st.button('Recommend'):
     cols = st.columns(5)
     for col, name, poster, rating in zip(cols, names, posters, ratings):
         with col:
-            st.image(poster, use_column_width=True)
+            st.image(poster, use_container_width=True)
             st.markdown(f"**{name}**")
             st.markdown(f"Rating: {rating}")
 
